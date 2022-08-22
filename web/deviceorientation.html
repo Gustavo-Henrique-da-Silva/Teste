@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Device Orientacion</title>
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+    <head>
+      <link rel="icon" href="/public/images/icons/favicon-32x14.png">
+      <!--
+          <link rel="icon" href="/public/images/icons/favicon-18x8.png">
+          <link rel="icon" type="image/png"
+                href="/public/images/icons/pwa-icon-192.png"
+                sizes="192x192">
+          -->     
+    </head>
+  <body>
+    
+    <script>
+
+      window.addEventListener("deviceorientation", handleOrientation, true);
+
+      function handleOrientation(event) {
+          var absolute = event.absolute;
+          var alpha    = event.alpha;
+          var beta     = event.beta;
+          var gamma    = event.gamma;
+
+          alert("absolute =   "+absolute);
+          alert("alpha = "+alpha);
+          alert("beta = "+beta);
+          alert("gamma = "+gamma);
+          // Do stuff with the new orientation data
+      }  
+    </script>
+    
+    <h1>Device Orientation Detect</h1>
+    <p>Movimento o celular pra detectar a sua orientacao..</p>
+    
+    <center><img src="./Wabner.svg" alt="WagnerImg" width="500px" height="500px"></img></center>
+  </body>
+</html> 
